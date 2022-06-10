@@ -2,22 +2,28 @@
     margin: 0;
     padding: 0;
   }
+  body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(75, 66, 66) ;
+  }
   a{
     text-decoration: none;
     color: rgb(75, 66, 66) ;
     font-size: medium;
   } 
   header{
+    width: 1350px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 0; 
+    background-color: beige;
   }
 .main{
     padding-top: 10px;
     padding-bottom: 10px ;
     display: flex;
     width: 100%;
-    background-color: beige;
+   
 }
 .main-left{
     padding-left: 5%;
@@ -30,11 +36,10 @@
 .main-center>a{
     width: max-content;
     padding-right: 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .main-right{
     padding-left: 5%;
-    width: 100%;
+    width: max-content;
     display: flex;
     align-items: center;
     position: relative;
@@ -53,8 +58,13 @@
     left: 350px;
 }
 .main-content{
+    background-image: url(https://wiki19.com/wp-content/uploads/2019/12/hinh-nen-hoa-dep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 30px;
     height: 1000px;
+    color: aliceblue;
+    padding: 20px 0 0 50px;
 }
 .footer{
     width: 100%;
@@ -66,5 +76,14 @@
     padding-left: 10%;
     font-size: 22px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    color: rgb(75, 66, 66) ;
+}
+.mxh{
+    padding-top: 42px;
+    /* display: flex;
+    align-items: center; */
+    padding-left: 520px;
+    position: relative;
+}
+.mxh>a{
+    padding-left: 5%;
 }
