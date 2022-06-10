@@ -7,13 +7,15 @@
     color: rgb(75, 66, 66) ;
     font-size: medium;
   } 
+  header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 .main{
     padding-top: 10px;
     padding-bottom: 10px ;
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     width: 100%;
     background-color: beige;
 }
@@ -51,7 +53,7 @@
     left: 350px;
 }
 .main-content{
-    padding-top: 100px;
+    padding-top: 30px;
     height: 1000px;
 }
 .footer{
