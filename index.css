@@ -4,23 +4,39 @@
   box-sizing: border-box;
 }
 body{
-    background-image: url(https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/263485779_974414256764840_3173548359309650245_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Q7ZA9DR3bO0AX_qaLDR&_nc_ht=scontent-hkt1-2.xx&oh=00_AT8oNma7OxH3WJkoU7bDhS9pQfSneFn5ZW4Musp6p5h0eQ&oe=62A85625);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 10;
+    position: relative;
     display: flex;
     justify-content: center;
 }
+.box{
+  position: absolute;
+  top: 0;
+  /* background-color: antiquewhite; */
+}
+#background{
+
+  filter: blur(3px);
+  z-index: -1;
+  position:absolute;
+  top: 0;
+  width: 1350px;
+  height:1300px;
+  /* background-image: url(htp://skhcn.hatinh.gov.vn/plugin_upload/preview/hinh_anh/1/110/150501-mat-trai-cua-cong-nghe-so-1-thumb.jpg); */
+  background-image: url(https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/263485779_974414256764840_3173548359309650245_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Q7ZA9DR3bO0AX_qaLDR&_nc_ht=scontent-hkt1-2.xx&oh=00_AT8oNma7OxH3WJkoU7bDhS9pQfSneFn5ZW4Musp6p5h0eQ&oe=62A85625);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
 a {
   text-decoration: none;
-  color: rgb(68, 24, 24);
+  color: rgb(7, 5, 5);
   font-weight: bold;
   font-size:17px;
 }
 header {
-  width: 1350px;
+  width: 1250px;
   /* position: -webkit-sticky */
   position: sticky;
   top: 0;
@@ -28,18 +44,22 @@ header {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   z-index: 999;
+ background-color: none;
 }
 .main {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
+  justify-items: center;
   /* width: 100%; */
 }
-.main-left {
+.main>div {
   padding-left: 5%;
+  display: flex;
+  align-items: center;
 }
 .main-center {
-  padding-left: 5%;
+  /* padding-left: 5%; */
   display: flex;
   align-items: center;
 }
@@ -47,23 +67,17 @@ header {
   width: max-content;
   padding-right: 50px;
 }
-.main-right {
-  /* padding-left: 10px; */
-  display: flex;
-  align-items: center;
-  position: relative;
+ul{
+  list-style-type: none;
+  overflow: hidden;
 }
-.main-right > input {
-  height: 50%;
+li{
+  padding-left: 20px;
+  float:left;
+}
+input{
+  height: 30px;
   width: 200px;
-  position: absolute;
-  left: 0;
-  padding-left: 10px;
-}
-.main-right > div {
-  width: max-content;
-  position: absolute;
-  left: 220px;
 }
 .main-content {
   width: 100%;
@@ -71,7 +85,7 @@ header {
   opacity: 1;
   padding-top: 0;
   height: 1000px;
-  color: aliceblue;
+  color: rgb(10, 11, 12);
   padding: 20px 0 0 50px;
 }
 .footer {
