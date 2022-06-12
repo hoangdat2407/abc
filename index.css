@@ -113,9 +113,8 @@ input::placeholder {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .mxh {
-  position: absolute;
-  top: 100px;
-  left: 40%;
+  margin-top: 25 px;
+  margin-left: 40%;
   width: max-content;
 }
 .mxh > a {
