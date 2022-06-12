@@ -134,8 +134,4 @@ input::placeholder {
   width: fit-content;
   height: 1500px;
  }
- .footer{
-  position: absolute;
-  bottom: 0;
  }
-}
