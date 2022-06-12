@@ -115,10 +115,11 @@ input::placeholder {
 .mxh {
   position: absolute;
   top: 100px;
-  left: 45%;
+  left: 40%;
+  width: max-content;
 }
 .mxh > a {
-  padding-left: 5%;
+  padding-left: 20px;
   color: rgb(75, 66, 66);
 } 
 @media (max-width: 600px) {
