@@ -128,7 +128,7 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 2100px;
+  height: 2200px;
  }
  .main-content+._footer+.main{
   width: fit-content;
