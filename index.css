@@ -1,141 +1,91 @@
-* {
-  margin: 0;
+*{
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
+  background-color:black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
 }
-body {
-  /* position: relative; */
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 1800px;
-  /* background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/07/05/background-cong-nghe-thong-tin_035953926.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-  color: rgb(12, 10, 10);
-}
-.box {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-#background {
-  display: inline-block;
-  filter: blur(3px);
-  z-index: -1;
-  position: absolute;
+header{
+  position: sticky;
   top: 0;
-  width: 100%;
-  height:3100px ;
-  background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/07/05/background-cong-nghe-thong-tin_035953926.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0.5 ;
 }
-a {
+a{
   text-decoration: none;
-  color:  rgb(12, 11, 11);
-  font-weight: bold;
-  font-size: 17px;
 }
-header {
-  width: 1100px;
-  /* position: sticky; */
-  /* top: 0; */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  z-index: 999;
-  /* background-color: black; */
-}
-.main {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.nav{
   display: flex;
-  justify-content: center;
-  /* width: 100%; */
+  justify-content: space-between;
 }
-.main > div {
-  /* padding-left: 5%; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main-center {
-  /* padding-left: 5%; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main-center > a {
-  width: max-content;
-  /* padding-right: 50px; */
-}
-ul {
-  list-style-type: none;
+ul{
   overflow: hidden;
+  list-style-type: none;
 }
-li {
-  padding-top: 10px;
-  padding-left: 20px;
+li{
+  text-decoration: none;
   float: left;
 }
-input {
-  border-radius: 5px;
-  border: none;
-  height: 30px;
-  width: 200px;
+i{
+  padding: 0 5px 0 0;
 }
-input::placeholder {
-  padding-left: 10px;
-}
-.main-content {
-  width: 1100px;
-  opacity: 1;
-  padding-top: 0;
-  height:max-content;
-  /* color:  rgb(68 149 7); */
-  padding: 20px 0 0 50px;
-}
-._footer {
+.logo{
   position: relative;
+  display: inline-block;
+  color: white;
+  padding:25px 50px ;
+  text-align: center;
+  border-radius: 5px;
+}
+.list-item{
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin:25px 50px 5px 50px ;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.list-item::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background-color: white;
+  width:0;
+  height: 2px;
+  transition: 0.25s ease-out;
+}
+.list-item:hover::after{
   width: 100%;
-  height: 200px;
-  background-color: black;
-  color: rgb(75, 66, 66);
+  left: 0;
 }
-._footer > p {
-  padding-top: 5%;
-  padding-left: 10%;
-  font-size: 22px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.list-item-active{
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin:25px 50px 5px 50px ;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
 }
-.mxh {
-  margin-top: 25 px;
-  margin-left: 40%;
-  width: max-content;
+.list-item-active::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left:0;
+  background-color: white;
+  width:100%;
+  height: 2px;
+  transition: 0.25s ease-out;
 }
-.mxh > a {
-  padding-left: 20px;
-  color: rgb(75, 66, 66);
-} 
-@media (max-width: 600px) {
- .box{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main
+{
   width: 100%;
-  height: 2200px;
- }
- .main-content+._footer+.main{
-  width: fit-content;
-  height: 1500px;
- }
-#background{
-  width:2200px;
-  height: 2200px;
+  height:3500px;
 }
- }
+#home{
+  background-image: url(https://i.pinimg.com/originals/4f/32/59/4f32597ca8d1b3fead14c996d99a7b1a.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
