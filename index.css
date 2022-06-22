@@ -1,15 +1,20 @@
 * {
   padding: 0;
   margin: 0;
-  color: white;
+  color: grey;
   font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+.container{
+  position: relative;
+  height: 2000px;
 }
 header {
   position: sticky;
   top: 0;
   z-index: 1000000;
-  background-color: gray;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* background-color: gray; */
+  background-color: white;
   box-sizing: border-box;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
@@ -42,9 +47,7 @@ img{
   height: 50px;
 }
 .logo {
-  position: relative;
   display: inline-block;
-  color: white;
   padding: 12px 50px 12px 50px;
   text-align: center;
   border-radius: 5px;
@@ -52,7 +55,7 @@ img{
 .list-item {
   /* background-color:blueviolet; */
   display: inline-block;
-  color: white;
+  color: black;
   margin: 25px 25px 0px 25px;
   text-align: center;
   border-radius: 5px;
@@ -67,7 +70,7 @@ img{
   height: 2px;
   position: absolute;
   bottom: 3px;
-  background-color: white;
+  background-color: grey;
   transition: all 1.25s ease;
 }
 .t1 {
@@ -84,25 +87,25 @@ img{
   left: 420px;
 }
 .menu li:hover:nth-child(1):hover ~ .underline {
-  background-color: white;
+  background-color: grey;
   opacity: 1;
   height: 2px;
   left: 10px;
 }
 .menu li:hover:nth-child(2):hover ~ .underline {
-  background-color: white;
+  background-color: grey;
   opacity: 1;
   height: 2px;
   left: 130px;
 }
 .menu li:hover:nth-child(3):hover ~ .underline {
-  background-color: white;
+  background-color: grey;
   opacity: 1;
   height: 2px;
   left: 265px;
 }
 .menu li:hover:nth-child(4):hover ~ .underline {
-  background-color: white;
+  background-color: grey;
   opacity: 1;
   height: 2px;
   left: 420px;
@@ -115,6 +118,8 @@ img{
   background-image: url(https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80);
   background-repeat: no-repeat;
   background-size:cover;
-  width: 100%;
   height:600px;
+}
+#math{
+height: 1000px;
 }
