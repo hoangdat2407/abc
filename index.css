@@ -123,3 +123,8 @@ img{
 #math{
 height: 1000px;
 }
+@media screen {
+  .container{
+    min-width: 1000px;
+  }
+}
