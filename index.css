@@ -60,55 +60,58 @@ img{
   text-align: center;
   border-radius: 5px;
   font-size: 18px;
+  font-weight:bold;
 }
 .menu {
   position: relative;
   padding-right: 30px;
 }
 .underline {
+  display: inline-block;
   width: 120px;
-  height: 2px;
+  height: 0px;
   position: absolute;
   bottom: 3px;
-  background-color: grey;
-  transition: all 1.25s ease;
+  background-color: rgb(86, 152, 168);
+  transition: all 1s ease;
 }
 .t1 {
-  left: 10px;
+  width:120px;
+  left: 10px;height: 2px;
 }
-.t2 {
-  left: 130px;
+.t2 {  width:120px;
+  left: 130px;height: 2px;
 }
 .t3 {
- 
-  left: 280px;
+  width:120px;
+  left: 280px;height: 2px;
 }
-.t4{
-  left: 430px;
+.t4{  width:120px;
+  left: 430px;height: 2px;
 }
 .menu li:hover:nth-child(1):hover ~ .underline {
-  background-color: grey;
+  background-color: rgb(86, 152, 168);
   opacity: 1;
   height: 2px;
-  left: 10px;
+  left: 10px;  width:120px;
 }
 .menu li:hover:nth-child(2):hover ~ .underline {
   background-color: grey;
   opacity: 1;
   height: 2px;
-  left: 130px;
+  left: 130px;  width:120px;
 }
 .menu li:hover:nth-child(3):hover ~ .underline {
   background-color: grey;
   opacity: 1;
   height: 2px;
-  left: 280px;
+  left: 280px;  width:120px;
 }
 .menu li:hover:nth-child(4):hover ~ .underline {
   background-color: grey;
   opacity: 1;
   height: 2px;
-  left: 430px;
+  left: 430px;  
 }
 .main {
   width: 100%;
