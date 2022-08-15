@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+}
+
+.tool {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.tool ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tool ul li {
+    display: inline;
+    padding: 10px 10px;
+}
+
+.tool ul li a {
+    text-decoration: none;
+    color: none;
+}
+.tool a img {
+    width: 70px;
+    height: 70px;
+}
+
+.under {
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    left: 15px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+#home:hover~.under {
+    left: 15px; 
+}
+
+#about:hover~.under {
+    left: 100px;
+}
+
+#contact:hover~.under {
+    left: 200px;
+}
