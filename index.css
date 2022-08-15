@@ -28,7 +28,7 @@ body{
 
 .tool ul li {
     display: inline;
-    padding: 10px 10px;
+    padding: 10px 35px;
 }
 
 .tool ul li a {
@@ -44,19 +44,43 @@ body{
     position: absolute;
     height: 2px;
     width: 80px;
-    left: 15px;
+    left: 65px;
     background-color: red;
     transition: 0.5s;
 }
-
-#home:hover~.under {
-    left: 15px; 
+#list{
+    position: relative;
 }
-
-#about:hover~.under {
-    left: 100px;
+.choice {
+    display: none;
+    position: absolute;
+    padding: 7.5px 0 ;
+    left:0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
 }
-
-#contact:hover~.under {
+.choice a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+.choice a:hover{
+    background-color: rgb(151, 144, 144);
+}
+#list:hover~.under {
     left: 200px;
+}
+#list:hover span:nth-child(2){
+    rotate: 90deg;
+}
+#list:hover .choice{
+    display: block;
+}
+#contact:hover~.under {
+    left: 370px;
 }
