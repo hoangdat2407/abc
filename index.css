@@ -4,11 +4,19 @@
     font-family: 'Dosis', sans-serif;
     font-size: large;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+   min-width: 1250px;
+   height: 100%;
+}
 .tool {
     display: flex;
     justify-content: space-between;
-    padding: 2% 6%;
+    padding: 10px 20px;
 }
 
 .tool ul {
